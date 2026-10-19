@@ -164,6 +164,22 @@ Each connection has a **toggle switch** that lets you enable or disable it witho
   :::
 
   </TabItem>
+  <TabItem value="abstract" label="Abstract">
+
+  **Abstract** serves open-weight models through an OpenAI-compatible **Responses** API.
+
+  | Setting | Value |
+  |---|---|
+  | **API Type** | **Responses** (see [Open Responses](/getting-started/quick-start/connect-a-provider/starting-with-open-responses)) |
+  | **URL** | `https://api.abstract.inc/v1` |
+  | **API Key** | Your API key from [platform.abstract.inc/keys](https://platform.abstract.inc/keys) |
+  | **Model IDs** | **Required**, add manually: `glm-5.3:superfast`, `deepseek-v4-flash:superfast`, `kimi-k3:superfast` |
+
+  :::caution
+  Abstract's `/models` endpoint also lists background (`:async`) models that do not stream chat replies. Add the three model IDs above to the allowlist.
+  :::
+
+  </TabItem>
   <TabItem value="perplexity" label="Perplexity">
 
   **Perplexity** offers search-augmented AI models via an OpenAI-compatible chat completions endpoint.
